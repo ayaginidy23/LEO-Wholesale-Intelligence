@@ -1,0 +1,54 @@
+@import "tailwindcss";
+
+/*
+  LEO MODA brand theme (taken from the leo.moda logo):
+  - ink   #211a16  (warm near-black of the logo text)
+  - cream #fffdf8  (logo background)
+  We re-map Tailwind's "slate" and "emerald" scales to warm brand tones,
+  so every page picks up the brand colors without editing each class.
+  Status colors (red / orange / amber / green / blue badges) stay as they are,
+  because they carry meaning (out of stock, overdue, healthy...).
+*/
+@theme {
+  /* Warm neutrals (replace cool slate) */
+  --color-slate-50: #faf8f4;
+  --color-slate-100: #f3efe8;
+  --color-slate-200: #e6e0d6;
+  --color-slate-300: #d3cbbf;
+  --color-slate-400: #a89f93;
+  --color-slate-500: #7d7469;
+  --color-slate-600: #5e564d;
+  --color-slate-700: #463f38;
+  --color-slate-800: #2f2924;
+  --color-slate-900: #211a16;
+  --color-slate-950: #16110e;
+
+  /* Brand accent: ink for actions, caramel for highlights (replace emerald) */
+  --color-emerald-50: #f7f1e7;
+  --color-emerald-100: #efe5d3;
+  --color-emerald-200: #e2d2b5;
+  --color-emerald-300: #d9bf8f;
+  --color-emerald-400: #c4a06a;
+  --color-emerald-500: #b08d57;
+  --color-emerald-600: #211a16;
+  --color-emerald-700: #211a16;
+  --color-emerald-800: #3b2f25;
+  --color-emerald-900: #211a16;
+
+  --color-brand-ink: #211a16;
+  --color-brand-cream: #fffdf8;
+  --color-brand-caramel: #b08d57;
+}
+
+body {
+  margin: 0;
+  font-family: "Inter", "Cairo", system-ui, sans-serif;
+  background: #faf8f4;
+  color: #211a16;
+}
+
+/* Arabic text (chat messages, product names) uses Cairo */
+:lang(ar),
+[dir="rtl"] {
+  font-family: "Cairo", "Inter", sans-serif;
+}

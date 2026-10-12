@@ -1,0 +1,17 @@
+# Virtual environment
+venv/
+
+data/
+
+# Python cache
+__pycache__/
+*.pyc
+
+# Jupyter checkpoints
+.ipynb_checkpoints/
+
+# Secret keys (API keys)
+.env
+
+#Frontend build
+node_modules/
