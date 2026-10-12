@@ -74,4 +74,4 @@ Open http://localhost:5173
 
 ## Acknowledgements
 
-Thanks to **HVIA** and **Ayman Abdelnasser** for the challenge.
+Thanks to **HVIA** and **Eng Ayman Abdelnasser** for the challenge.
